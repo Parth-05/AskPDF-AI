@@ -5,6 +5,7 @@ import React from 'react'
 import Image from 'next/image';
 import { api } from '../../convex/_generated/api';
 import Link from 'next/link';
+import UploadPDFDialog from './_components/upload-pdf-dialog';
 
 const Dashboard = () => {
   const { user } = useUser();
@@ -22,10 +23,18 @@ const Dashboard = () => {
             {/* <h2>{file?._creationTime}</h2> */}
           </Link>
         ))
-        :
-          [1,2,3,4,5,6,7, 8, 9, 10].map((item, index) => (
-            <div key={index} className='bg-slate-200 rounded-md h-[150px] animate-pulse'></div>
-          ))
+          :
+          fileList?.length === 0 ? (
+            <div className="flex justify-center items-center w-full h-[50vh]">
+    <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl font-medium text-gray-700">
+      Upload PDF to start making notes
+    </p>
+  </div>
+            ) :
+            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
+              <div key={index} className='bg-slate-200 rounded-md h-[150px] animate-pulse'></div>
+            ))
+
         }
       </div>
     </div>
