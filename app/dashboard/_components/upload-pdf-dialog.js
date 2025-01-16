@@ -91,7 +91,7 @@ const UploadPDFDialog = ({children, isMaxFile}) => {
                 </DialogHeader>
                 <DialogFooter className="sm:justify-end">
                     <DialogClose asChild>
-                        <Button type="button" variant="secondary">
+                        <Button onClick={() => setOpen(false)} type="button" variant="secondary">
                             Close
                         </Button>
                     </DialogClose>
