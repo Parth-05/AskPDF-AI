@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## AskPDF-AI
 
-## Getting Started
+Live Project Link: https://ask-pdf-ai-khaki.vercel.app/dashboard
 
-First, run the development server:
+AskPDF-AI is an innovative AI-powered RAG application that allows users to upload a PDF and ask questions based on its content. By integrating advanced technologies like Google Gemini and LangChain, the project provides precise and context-aware answers, simplifying the process of extracting and interacting with information in documents.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application is ideal for professionals, students, or anyone looking to quickly retrieve specific insights from large or complex PDF files without manually searching through them.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![image](https://github.com/user-attachments/assets/4e2dd5b2-5877-4c21-915d-6e4316eb9434)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![image](https://github.com/user-attachments/assets/c15f2a92-85b1-4725-bd39-31a529d717f4)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Project Description
+AskPDF-AI is built to address the challenge of quickly extracting relevant information from lengthy PDFs. It leverages state-of-the-art AI to process uploaded documents, break them into digestible chunks, and provide accurate answers to user queries in real time.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project achieves this by combining a powerful language model (Google Gemini) with a robust application framework (Next.js), making it easy to use while delivering exceptional performance. Its architecture ensures scalability, security, and responsiveness, making it a versatile tool for various use cases.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Features:
 
-## Deploy on Vercel
+Upload PDFs: Supports document uploads in PDF format.
+Question-Answering: Users can ask natural language questions about the content of the uploaded PDF.
+AI-Powered Answers: Google Gemini provides detailed, context-aware responses.
+Efficient Data Storage: ConvexDB ensures fast and secure metadata storage.
+Modern UI/UX: Built with Next.js for a smooth and intuitive user experience.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies & Languages Used
+Frontend Framework: Next.js
+AI Framework: LangChain
+Database: ConvexDB
+Language Model: Google Gemini
+Programming Languages: JavaScript, Python
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Architecture
+The architecture of AskPDF-AI consists of four main components:
+
+**Frontend (Next.js):**
+
+Handles user interactions for uploading PDFs and submitting questions.
+Provides an intuitive UI for seamless communication with the backend.
+
+**Backend:**
+
+Powered by LangChain, processes the uploaded PDFs and converts their content into an LLM-compatible format.
+Queries the Google Gemini model using contextual embeddings.
+
+**Database (ConvexDB):**
+
+Stores metadata about uploaded PDFs and user sessions.
+Facilitates efficient retrieval and state management for active queries.
+
+**AI Integration (Google Gemini):**
+
+Answers user questions by leveraging its capabilities in natural language processing and understanding.
