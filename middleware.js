@@ -17,10 +17,6 @@ export default clerkMiddleware(async (auth, req) => {
   //   }
   // }
 
-   // Redirect to "/" if the user is not logged in and is accessing a protected route
-   if (isProtectedRoute(req) && !user) {
-    return NextResponse.redirect(new URL('/', nextUrl.origin));
-  }
 
   // Protect all routes except public routes
   if (!isPublicRoute(req)) {
