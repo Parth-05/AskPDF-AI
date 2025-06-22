@@ -1,6 +1,5 @@
 ## AskPDF-AI
 
-Live Project Link: https://ask-pdf-ai-khaki.vercel.app
 
 AskPDF-AI is an innovative AI-powered RAG application that allows users to upload a PDF and ask questions based on its content. By integrating advanced technologies like Google Gemini and LangChain, the project provides precise and context-aware answers, simplifying the process of extracting and interacting with information in documents.
 
@@ -8,8 +7,9 @@ This application is ideal for professionals, students, or anyone looking to quic
 
 ![image](https://github.com/user-attachments/assets/4e2dd5b2-5877-4c21-915d-6e4316eb9434)
 
+https://github.com/user-attachments/assets/9f800441-57e8-41a4-9c75-2bef17f59aa1
 
-![image](https://github.com/user-attachments/assets/c15f2a92-85b1-4725-bd39-31a529d717f4)
+
 
 
 ## Project Description
